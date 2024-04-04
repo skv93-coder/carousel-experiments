@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    const id = setInterval(handle, 3000);
+    const id = setInterval(handle, 5000);
     return () => {
       clearInterval(id);
     };
@@ -44,7 +44,7 @@ function App() {
         >
           <div
             style={{
-              transition: "2s",
+              transition: "1s",
               width: "100%",
               transform: `translateX(-${counter * 39.7}%)`,
             }}
@@ -62,7 +62,7 @@ function App() {
                   part="img"
                   alt=""
                   loading="lazy"
-                  style={{ transition: "width 2s ease" }}
+                  style={{ transition: "width 1s ease" }}
                   src={a}
                   className={`opacity-1 bg-img list ${
                     counter === i && "first"
